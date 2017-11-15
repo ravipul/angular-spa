@@ -1,4 +1,4 @@
-# angular-cli-spa
+# angular-cli
 
 .NET Core 2.0 Angular 5 project generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
