@@ -6,7 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Funq;
 using ServiceStack;
-using ServiceStack.Text;
 using ServiceStack.Configuration;
 using MyApp.ServiceInterface;
 
@@ -47,11 +46,10 @@ namespace MyApp
         {
             Plugins.Add(new TemplatePagesFeature()); // enable server-side rendering, see: http://templates.servicestack.net
 
-            var debugMode = AppSettings.Get(nameof(HostConfig.DebugMode), false);
             SetConfig(new HostConfig
             {
                 AddRedirectParamsToQueryString = true,
-                DebugMode = debugMode
+                DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), false)
             });
         }
     }
