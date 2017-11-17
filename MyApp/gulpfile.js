@@ -2,10 +2,12 @@
     var SCRIPTS = {
         'dev': 'npm run dev',
         'dtos': 'npm run dtos',
-        'webpack-build': 'npm run build',
-        'webpack-build-prod': 'npm run build-prod',
+        'ng-build': 'npm run build',
+        'ng-build-prod': 'npm run build-prod',
+        'ng-lint': 'npm run lint',
         'publish': 'npm run publish',
-        'tests-run': 'npm run test'
+        'tests-run': 'npm run test',
+        'tests-e2e': 'npm run e2e'
     };
 
     var gulp = require('gulp');
