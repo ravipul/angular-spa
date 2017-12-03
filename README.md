@@ -2,6 +2,10 @@
 
 .NET Core 2.0 Angular 5 project generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
+[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-cli.png)](http://angular-cli.web-templates.io/)
+
+> Browse [source code](https://github.com/NetCoreTemplates/angular-cli) or view Live Demo [angular-cli.web-templates.io](http://angular-cli.web-templates.io)
+
 ## Dev Workflow
 
 Run `dotnet watch run` to start .NET Core 2.0 Server App and watch for changes and in a new terminal window run `npm run dev` to start a dev watch
