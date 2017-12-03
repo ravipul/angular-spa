@@ -4,7 +4,11 @@
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-cli.png)](http://angular-cli.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/angular-cli) or view Live Demo [angular-cli.web-templates.io](http://angular-cli.web-templates.io)
+> Browse [source code](https://github.com/NetCoreTemplates/angular-cli), view live demo [angular-cli.web-templates.io](http://angular-cli.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+
+    $ npm install -g servicestack-cli
+
+    $ dotnet-new angular-cli ProjectName
 
 ## Dev Workflow
 
