@@ -1,6 +1,6 @@
 # angular-cli
 
-.NET Core 2.0 Angular 5 project generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+.NET Core 2.1 Angular 6 project generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-cli.png)](http://angular-cli.web-templates.io/)
 
@@ -12,7 +12,7 @@
 
 ## Dev Workflow
 
-Run `dotnet watch run` to start .NET Core 2.0 Server App and watch for changes and in a new terminal window run `npm run dev` to start a dev watch
+Run `dotnet watch run` to start .NET Core 2.1 Server App and watch for changes and in a new terminal window run `npm run dev` to start a dev watch
 aot build for compiling client assets.
 
 ## Code scaffolding
@@ -25,7 +25,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 ## Publish
 
-Run `npm run publish` to generate a client and server production build the project. The build artifacts will be stored in the `bin/Release/netcoreapp2.0/publish/` directory. 
+Run `npm run publish` to generate a client and server production build the project. The build artifacts will be stored in the `bin/Release/netcoreapp2.1/publish/` directory. 
 
 ## Running unit tests
 
