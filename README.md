@@ -68,7 +68,7 @@ To run end-to-end integration tests with [Protractor](http://www.protractortest.
 
 ## Angular CLI App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+This project was generated with [Angular CLI](https://cli.angular.io) version 6.1.1.
 
 ## Code scaffolding
 
