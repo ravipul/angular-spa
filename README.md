@@ -1,14 +1,14 @@
-# angular-cli
+# angular-spa
 
-.NET Core 2.1 Angular 6.1 project generated with [Angular CLI](https://github.com/angular/angular-cli).
+.NET Core 2.1 Angular 6.1 project generated with [Angular CLI](https://github.com/angular/angular-spa).
 
-[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-cli.png)](http://angular-cli.web-templates.io/)
+[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-spa.png)](http://angular-spa.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/angular-cli), view live demo [angular-cli.web-templates.io](http://angular-cli.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/angular-spa), view live demo [angular-spa.web-templates.io](http://angular-spa.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
     $ npm install -g @servicestack/cli
 
-    $ dotnet-new angular-cli ProjectName
+    $ dotnet-new angular-spa ProjectName
 
 ## Development workflow
 
@@ -76,4 +76,4 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-spa/blob/master/README.md).
