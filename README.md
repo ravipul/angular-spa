@@ -74,6 +74,22 @@ This project was generated with [Angular CLI](https://cli.angular.io) version 6.
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Troubleshooting
+
+### Azure Service Fabric Mesh
+
+If using [Azure Service Fabric Mesh](https://azure.microsoft.com/en-au/services/service-fabric/) you can add the targets to the `.csproj` host project to
+have it generate necessary assets on build:
+
+```xml
+<Target Name="NgDebug" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
+    <Exec WorkingDirectory="$(ProjectDir)src" Command="ng build -ec" />
+</Target>
+<Target Name="NgRelease" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <Exec WorkingDirectory="$(ProjectDir)src" Command="ng build --prod" />
+</Target>
+```
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-spa/blob/master/README.md).
