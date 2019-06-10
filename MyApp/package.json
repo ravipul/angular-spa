@@ -6,7 +6,7 @@
     "ng": "ng",
     "dev": "ng build --aot --watch",
     "start": "ng serve --proxy-config proxy.config.json",
-    "dtos": "cd src && typescriptd-ref",
+    "dtos": "tsd-ref && ts-ref",
     "build": "ng build --prod",
     "publish": "npm run build && dotnet publish -c Release",
     "lint": "ng lint",

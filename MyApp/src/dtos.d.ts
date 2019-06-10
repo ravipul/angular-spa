@@ -1,5 +1,5 @@
 /* Options:
-Date: 2019-06-09 03:23:48
+Date: 2019-06-10 06:23:51
 Version: 5.51
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: https://localhost:5001
@@ -81,6 +81,9 @@ interface HelloResponse
 // @DataContract
 interface AuthenticateResponse extends IHasSessionId, IHasBearerToken
 {
+    // @DataMember(Order=11)
+    responseStatus?: ResponseStatus;
+
     // @DataMember(Order=1)
     userId?: string;
 
@@ -110,9 +113,6 @@ interface AuthenticateResponse extends IHasSessionId, IHasBearerToken
 
     // @DataMember(Order=10)
     permissions?: string[];
-
-    // @DataMember(Order=11)
-    responseStatus?: ResponseStatus;
 
     // @DataMember(Order=12)
     meta?: { [index: string]: string; };

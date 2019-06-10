@@ -1,5 +1,5 @@
 /* Options:
-Date: 2019-06-09 12:27:12
+Date: 2019-06-10 06:23:56
 Version: 5.51
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: https://localhost:5001
@@ -88,6 +88,9 @@ export class HelloResponse
 // @DataContract
 export class AuthenticateResponse implements IHasSessionId, IHasBearerToken
 {
+    // @DataMember(Order=11)
+    public responseStatus: ResponseStatus;
+
     // @DataMember(Order=1)
     public userId: string;
 
@@ -117,9 +120,6 @@ export class AuthenticateResponse implements IHasSessionId, IHasBearerToken
 
     // @DataMember(Order=10)
     public permissions: string[];
-
-    // @DataMember(Order=11)
-    public responseStatus: ResponseStatus;
 
     // @DataMember(Order=12)
     public meta: { [index: string]: string; };
