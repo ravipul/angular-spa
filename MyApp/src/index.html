@@ -9,12 +9,16 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+  <i hidden>
   {{ 'buttons,svg-auth,app' | cssIncludes }}
   {{ 'svg-icons'            | cssIncludes | svgFill('#df2127') }}
-
-  <i hidden>{{ '/js/hot-fileloader.js' | ifDebugIncludeScript }}</i>
-  <script>NAV_ITEMS = {{ 'GetNavItems' | execService | json }}</script>
-  <script>AUTH = {{ 'Authenticate' | execService({ ifErrorReturn: "null" }) | json }}</script>
+  {{#script}}
+    {{ '/js/hot-fileloader.js'    | onlyIfDebug | includeFile }}
+    NAV_ITEMS = {{ 'GetNavItems'  | execService | json }};
+    AUTH      = {{ 'Authenticate' | execService({ ifErrorReturn: "null" }) | json }};
+  {{/script}}
+  </i>
 
   <style>
     .btn-social i:before {
