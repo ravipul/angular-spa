@@ -1,16 +1,18 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Funq;
 using ServiceStack;
-using ServiceStack.Web;
-using ServiceStack.Text;
 using ServiceStack.Configuration;
 using MyApp.ServiceInterface;
+using ServiceStack.Script;
+using ServiceStack.Web;
+using System;
+using ServiceStack.Text;
+using ServiceStack.Logging;
 
 namespace MyApp
 {
@@ -55,8 +57,6 @@ namespace MyApp
                 AddRedirectParamsToQueryString = true,
                 DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), HostingEnvironment.IsDevelopment()),
             });
-
-            Svg.Load(ContentRootDirectory.GetDirectory("/src/assets/svg"));
         }
     }
 }
