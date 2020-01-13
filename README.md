@@ -6,9 +6,9 @@
 
 > Browse [source code](https://github.com/NetCoreTemplates/angular-spa), view live demo [angular-spa.web-templates.io](http://angular-spa.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
-    $ dotnet tool install -g web
+    $ dotnet tool install -g x
 
-    $ web new angular-spa ProjectName
+    $ x new angular-spa ProjectName
 
 ## Development workflow
 
