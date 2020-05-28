@@ -1,6 +1,6 @@
 # angular-spa
 
-.NET Core 3.1 Angular 8 project generated with [Angular CLI](https://github.com/angular/angular-spa).
+.NET Core 3.1 Angular 9 project generated with [Angular CLI](https://github.com/angular/angular-spa).
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-spa.png)](http://angular-spa.web-templates.io/)
 
