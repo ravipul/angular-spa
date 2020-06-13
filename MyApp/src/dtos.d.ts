@@ -1,6 +1,6 @@
 /* Options:
-Date: 2019-06-10 06:23:51
-Version: 5.51
+Date: 2020-06-13 21:40:48
+Version: 5.91
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: https://localhost:5001
 
@@ -41,16 +41,16 @@ interface IPost
 // @DataContract
 interface ResponseError
 {
-    // @DataMember(Order=1, EmitDefaultValue=false)
+    // @DataMember(Order=1)
     errorCode?: string;
 
-    // @DataMember(Order=2, EmitDefaultValue=false)
+    // @DataMember(Order=2)
     fieldName?: string;
 
-    // @DataMember(Order=3, EmitDefaultValue=false)
+    // @DataMember(Order=3)
     message?: string;
 
-    // @DataMember(Order=4, EmitDefaultValue=false)
+    // @DataMember(Order=4)
     meta?: { [index: string]: string; };
 }
 
@@ -187,8 +187,6 @@ interface Hello extends IReturn<HelloResponse>
 
 // @Route("/auth")
 // @Route("/auth/{provider}")
-// @Route("/authenticate")
-// @Route("/authenticate/{provider}")
 // @DataContract
 interface Authenticate extends IReturn<AuthenticateResponse>, IPost
 {
@@ -212,9 +210,6 @@ interface Authenticate extends IReturn<AuthenticateResponse>, IPost
 
     // @DataMember(Order=7)
     rememberMe?: boolean;
-
-    // @DataMember(Order=8)
-    continue?: string;
 
     // @DataMember(Order=9)
     errorView?: string;
@@ -314,9 +309,6 @@ interface Register extends IReturn<RegisterResponse>, IPost
 
     // @DataMember(Order=8)
     autoLogin?: boolean;
-
-    // @DataMember(Order=9)
-    continue?: string;
 
     // @DataMember(Order=10)
     errorView?: string;
